@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "./Components/Nav";
 import styled from "@emotion/styled";
+import Banner from "./Components/Banner";
 import "./base.css";
 
 const Container = styled.div`
@@ -12,6 +13,7 @@ function App() {
   return (
     <Container>
       <Nav></Nav>
+      <Banner></Banner>
     </Container>
   );
 }

@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import Button from './UI/button';
 import { ReactComponent as myLogo } from '../images/mylogo_transparent_white.svg';
 import { ReactComponent as menu } from '../images/menu.svg'; 
+import { ReactComponent as close } from '../images/close.svg';  
 
 const Navgation=styled.div`
     position:sticky;
@@ -13,31 +14,41 @@ const Navgation=styled.div`
     display:flex;
     justify-content:space-between;
     align-items:center;
+    z-index:1000;
 `;
+
 const MyLogo = styled(myLogo)`
     width: 100%;
     height:100%;
     cursor:pointer;
 `;
 const MenuMenu = styled.div`
-    width: 100%;
-    background-color: #002B5B;
-    display:flex;
-    flex-direction:column;
-    a{
-        color:white;
-        font-size:1.5rem;
-        text-align:center;
-        padding:20px 15px;
-    }
-    a:hover{
-        background-color:#8FE3CF;
-        color:black;
+    display:none;
+    @media screen and (max-width: 768px){
+        display:block;
+        position:absolute;
+        top:100px;
+        width: 100%;
+        margin-top:-10px;
+        background-color: #002B5B;
+        display:flex;
+        flex-direction:column;
+        a{
+            color:white;
+            font-size:1.5rem;
+            text-align:center;
+            padding:20px 15px;
+        }
+        a:hover{
+            background-color:#8FE3CF;
+            color:black;
+        }
     }
 `;
-
 const Links = styled.div`
     display:flex;
+    justify-content:space-between;
+    ainer-align:center;
 `;
 const Menu = styled(menu)`
     display:none;
@@ -49,6 +60,22 @@ const Menu = styled(menu)`
         display:block;
     }
 `;
+const Close = styled(close)`
+    display:none;
+    width: 50px;
+    height: 50px;
+    margin-right:35px;
+    @media screen and (max-width: 768px){
+        color:white;
+        display:block;
+    }
+`;
+
+const Logo = styled.div`
+    display:flex;
+    justify-content:center;
+    aign-items:center;
+`;
 
 const Nav=()=>{
     const [showMenu, setShowMenu] = useState(false);
@@ -56,26 +83,25 @@ const Nav=()=>{
         setShowMenu(!showMenu); 
     };
     return(
-    <>
         <Navgation>
-            <div className="logo">
+            <Logo>
                 <a href="#5"><MyLogo /></a>
-            </div>
+            </Logo>
             <Links>
                 <Button value="About Me" link="#1"/>
                 <Button value="Projects" link="#2"/>
                 <Button value="Contact" link="#3"/>
-                <Menu onClick={handleMenuClick}/>
+                {!showMenu ? <Menu onClick={handleMenuClick}/>:
+                <Close onClick={handleMenuClick}/>}
             </Links>
-        </Navgation>
-        {!showMenu &&
+        {!showMenu ||
             <MenuMenu>
                 <a href="#1">About Me</a>
                 <a href="#2">Projects</a>
                 <a href="#3">Contact</a>
             </MenuMenu>
         }
-    </>
+        </Navgation>
     );
 };
 export default Nav;
