@@ -1,5 +1,5 @@
 import React from 'react';
-import './Banner.scss';
+import './Banner.css';
 import '../Components/UI/button2.css';
 import '../Components/UI/button.css';
 
