@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/chaoci/react_personal_page/static/css/main.7138cccc.css",
-    "main.js": "/chaoci/react_personal_page/static/js/main.dc8699ed.js",
-    "static/js/787.c0841a6b.chunk.js": "/chaoci/react_personal_page/static/js/787.c0841a6b.chunk.js",
-    "static/media/mypic.png": "/chaoci/react_personal_page/static/media/mypic.dd90ab8f2b36f9f1d018.png",
-    "static/media/background.svg": "/chaoci/react_personal_page/static/media/background.4c3bc4bb8b7873a673c6.svg",
-    "static/media/small_background.svg": "/chaoci/react_personal_page/static/media/small_background.fe18281919324edf2496.svg",
-    "static/media/mylogo_transparent_white.svg": "/chaoci/react_personal_page/static/media/mylogo_transparent_white.ce4bc67885ca0f420fc0708dc10b3e78.svg",
-    "index.html": "/chaoci/react_personal_page/index.html",
-    "static/media/close.svg": "/chaoci/react_personal_page/static/media/close.77816ca827f2da4a77c5687f36daf955.svg",
-    "static/media/menu.svg": "/chaoci/react_personal_page/static/media/menu.7b280b83d40cf9564784e505d81b24d6.svg",
-    "main.7138cccc.css.map": "/chaoci/react_personal_page/static/css/main.7138cccc.css.map",
-    "main.dc8699ed.js.map": "/chaoci/react_personal_page/static/js/main.dc8699ed.js.map",
-    "787.c0841a6b.chunk.js.map": "/chaoci/react_personal_page/static/js/787.c0841a6b.chunk.js.map"
+    "main.css": "/react_personal_page/static/css/main.af5f2b0a.css",
+    "main.js": "/react_personal_page/static/js/main.db1aac86.js",
+    "static/js/787.c0841a6b.chunk.js": "/react_personal_page/static/js/787.c0841a6b.chunk.js",
+    "static/media/mypic.png": "/react_personal_page/static/media/mypic.dd90ab8f2b36f9f1d018.png",
+    "static/media/background.svg": "/react_personal_page/static/media/background.4c3bc4bb8b7873a673c6.svg",
+    "static/media/small_background.svg": "/react_personal_page/static/media/small_background.fe18281919324edf2496.svg",
+    "static/media/mylogo_transparent_white.svg": "/react_personal_page/static/media/mylogo_transparent_white.ce4bc67885ca0f420fc0708dc10b3e78.svg",
+    "index.html": "/react_personal_page/index.html",
+    "static/media/close.svg": "/react_personal_page/static/media/close.77816ca827f2da4a77c5687f36daf955.svg",
+    "static/media/menu.svg": "/react_personal_page/static/media/menu.7b280b83d40cf9564784e505d81b24d6.svg",
+    "main.af5f2b0a.css.map": "/react_personal_page/static/css/main.af5f2b0a.css.map",
+    "main.db1aac86.js.map": "/react_personal_page/static/js/main.db1aac86.js.map",
+    "787.c0841a6b.chunk.js.map": "/react_personal_page/static/js/787.c0841a6b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7138cccc.css",
-    "static/js/main.dc8699ed.js"
+    "static/css/main.af5f2b0a.css",
+    "static/js/main.db1aac86.js"
   ]
 }
