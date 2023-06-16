@@ -10,7 +10,6 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  background-color: #C2DEDC;
   color: white;
   padding: 80px;
   padding-top: 150px;
@@ -59,6 +58,7 @@
     min-width: 350px;
     flex-direction: column;
     padding: 40px;
+    align-items: center;
   }
   .banner-title {
     width: 100%;
@@ -75,6 +75,9 @@
   }
   .banner-title p {
     display: none;
+  }
+  .banner-photo {
+    width: 50%;
   }
   .banner-photo img {
     width: 100%;

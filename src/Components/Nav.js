@@ -14,7 +14,7 @@ const Navgation=styled.div`
     display:flex;
     justify-content:space-between;
     align-items:center;
-    z-index:1000;
+    z-index:10;
 `;
 
 const MyLogo = styled(myLogo)`

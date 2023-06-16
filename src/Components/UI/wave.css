@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.wave {
+  width: 10px;
+  height: 70%;
+  background-image: repeating-linear-gradient(180deg, #4F709C, #4F709C 5px, transparent 1px, transparent 10px);
+  background-size: 100% 15px; /* 調整波浪高度 */
+  border-radius: 15px;
+  animation: waveAnimation 5s linear infinite;
+}
+
+@keyframes waveAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100 0;
+  }
+  75% {
+    background-position: 0 -100px;
+  }
+  100% {
+    background-position: 100 0; /* 調整波浪高度 */
+  }
+}/*# sourceMappingURL=wave.css.map */
