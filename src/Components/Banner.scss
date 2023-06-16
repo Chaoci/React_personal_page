@@ -1,5 +1,5 @@
 .banner{
-    background-image: url('../images/background.svg');
+    background-image: url('/src/images/background.svg');
     margin: 0 auto;
     min-width: 1440px;
     height: 800px;
@@ -52,7 +52,7 @@
 
 @media screen and (max-width: 768px) {
     .banner{
-        background-image: url('../images/small_background.svg');
+        background-image: url('/src/images/small_background.svg');
         min-width: 350px;
         flex-direction: column;
         padding: 40px;
