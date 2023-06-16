@@ -10,6 +10,7 @@ const Container = styled.div`
   background-color:#2B4865;
 `;
 function App() {
+  console.log(process.env.PUBLIC_URL); 
   return (
     <Container>
       <Nav></Nav>

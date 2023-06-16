@@ -2,6 +2,8 @@ import React from 'react';
 import './Banner.css';
 import '../Components/UI/button2.css';
 import '../Components/UI/button.css';
+import mypic from '../images/mypic.png';
+
 
 const Banner = () => {
     return (
@@ -15,7 +17,7 @@ const Banner = () => {
                 </div>
             </div>
             <div className="banner-photo">
-                <img src={require('../images/mypic.png')} alt="banner" />
+                <img src={mypic} alt="banner" />
             </div>
         </div>
     );  

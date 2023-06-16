@@ -1,5 +1,7 @@
+$background: url('/src/images/background.svg');
+$smallbackground: url('/src/images/small_background.svg');
 .banner{
-    background-image: url('/src/images/background.svg');
+    background-image: $background;
     margin: 0 auto;
     min-width: 1440px;
     height: 800px;
@@ -52,7 +54,7 @@
 
 @media screen and (max-width: 768px) {
     .banner{
-        background-image: url('/src/images/small_background.svg');
+        background-image:$smallbackground;
         min-width: 350px;
         flex-direction: column;
         padding: 40px;
