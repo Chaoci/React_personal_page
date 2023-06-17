@@ -4,7 +4,8 @@
     background-image: repeating-linear-gradient(180deg, #4F709C, #4F709C 5px, transparent 1px, transparent 10px);
     background-size: 100% 15px; /* 調整波浪高度 */
     border-radius: 15px;
-    animation: waveAnimation 5s linear infinite;
+    position: absolute;
+    animation: waveAnimation 10s linear infinite;
   }
 
   @keyframes waveAnimation {
@@ -19,5 +20,13 @@
     }
     100% {
       background-position: 100  0; /* 調整波浪高度 */
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .wave{
+      height:30%;
+      transform: rotate(90deg);
+      top:30%;
     }
   }

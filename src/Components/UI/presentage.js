@@ -11,10 +11,10 @@ const Presentage = (props) => {
     const handleScroll = (event) => {
         const scrolledDistance = window.scrollY;
 
-        if (scrolledDistance >= 500) {
+        if (scrolledDistance >= 300) {
         setIsScrolled(true);
         } else {
-        setIsScrolled(false);
+        setIsScrolled(false);   
         }
 
         setScrollDistance(scrolledDistance);
@@ -31,7 +31,7 @@ const Presentage = (props) => {
     // 因為無法透過props來讀取寬度故用此法
     const animation = `animation-${props.animate}`
     console.log(scrollDistance);
-    console.log(isScrolled);
+    // console.log(isScrolled);
     return (
         <div className='presentage-box'>
             <div 

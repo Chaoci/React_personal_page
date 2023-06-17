@@ -39,6 +39,7 @@
 }
 
 .banner-photo {
+  margin-left: -50px;
   display: flex;
   align-items: center;
 }
@@ -77,7 +78,8 @@
     display: none;
   }
   .banner-photo {
-    width: 50%;
+    width: 100%;
+    margin-left: 0;
   }
   .banner-photo img {
     width: 100%;
