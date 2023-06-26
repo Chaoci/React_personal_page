@@ -9,8 +9,8 @@
 }
 @for $i from 1 through 7 {
     .card#{$i}{
-        background-color: white;
         border-radius: 15px 15px;
+        background-color: #fff;
         img{
             border-radius: 15px 15px 0 0;
             width: 100%;
@@ -18,6 +18,9 @@
         }
         h3{
             text-align: center;
+        }
+        &:hover{
+            transform: scale(1.1);
         }
     }
 }
