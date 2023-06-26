@@ -1,5 +1,5 @@
 import React from 'react';
-import orange from '../images/orange.png'
+import orange from '../images/orange.png';
 import './About.css';
 import Presentage from './UI/presentage';
 import '../Components/UI/wave.css';
