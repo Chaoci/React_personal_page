@@ -119,4 +119,41 @@
 }
 .card7:hover {
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .projectItemCard {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .card1:hover {
+    transform: scale(1);
+  }
+  .card2:hover {
+    transform: scale(1);
+  }
+  .card4 {
+    display: none;
+  }
+  .card4:hover {
+    transform: scale(1);
+  }
+  .card5 {
+    display: none;
+  }
+  .card5:hover {
+    transform: scale(1);
+  }
+  .card6 {
+    display: none;
+  }
+  .card6:hover {
+    transform: scale(1);
+  }
+  .card7 {
+    display: none;
+  }
+  .card7:hover {
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=ProjectItem.css.map */
