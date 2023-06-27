@@ -1,7 +1,6 @@
 import React from 'react';
 import './Banner.css';
 import '../Components/UI/button2.css';
-import '../Components/UI/button.css';
 import mypic from '../images/mypic.png';
 
 

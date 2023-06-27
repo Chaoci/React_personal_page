@@ -7,6 +7,12 @@
     grid-template-columns: repeat(3, 1fr); /* 三列等宽 */
     gap:20px;
 }
+.project-button{
+    text-align: center;
+    .btn-color .btn-1::before{
+        background-color: lightgray;
+    }
+}
 @for $i from 1 through 7 {
     .card#{$i}{
         border-radius: 15px 15px;
@@ -24,22 +30,19 @@
         }
     }
 }
+.hidden{
+    display:none;
+}
+
 
 @media screen and (max-width:768px) {
     .projectItemCard{
         grid-template-columns: 1fr;
+        // grid-template-columns: repeat(3, 1fr);
         gap: 40px;
     }
-    @for $i from 1 to 3{
+    @for $i from 1 to 8{
         .card#{$i}{
-            &:hover{
-                transform: scale(1);
-            }
-        }
-    }
-    @for $f from 4 to 8 {
-        .card#{$f}{
-            display: none;
             &:hover{
                 transform: scale(1);
             }

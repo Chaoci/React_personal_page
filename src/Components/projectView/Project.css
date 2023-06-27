@@ -3,4 +3,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.project-title {
+  padding-top: 40px;
+}
+.project-title h2 {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
 }/*# sourceMappingURL=Project.css.map */

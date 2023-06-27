@@ -101,6 +101,9 @@
     display: flex;
     flex-direction: column;
   }
+  .About-title h2 {
+    font-size: 48px;
+  }
   .About-title .About-title1 {
     width: 100%;
   }

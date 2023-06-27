@@ -9,6 +9,13 @@
   gap: 20px;
 }
 
+.project-button {
+  text-align: center;
+}
+.project-button .btn-color .btn-1::before {
+  background-color: lightgray;
+}
+
 .card1 {
   border-radius: 15px 15px;
   background-color: #fff;
@@ -121,6 +128,10 @@
   transform: scale(1.1);
 }
 
+.hidden {
+  display: none;
+}
+
 @media screen and (max-width: 768px) {
   .projectItemCard {
     grid-template-columns: 1fr;
@@ -132,26 +143,17 @@
   .card2:hover {
     transform: scale(1);
   }
-  .card4 {
-    display: none;
+  .card3:hover {
+    transform: scale(1);
   }
   .card4:hover {
     transform: scale(1);
   }
-  .card5 {
-    display: none;
-  }
   .card5:hover {
     transform: scale(1);
   }
-  .card6 {
-    display: none;
-  }
   .card6:hover {
     transform: scale(1);
-  }
-  .card7 {
-    display: none;
   }
   .card7:hover {
     transform: scale(1);

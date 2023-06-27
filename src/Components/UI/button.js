@@ -3,7 +3,7 @@ import './button.css';
 
 const Button = (props)=>{
     return(
-        <div className="btn btn-1 hover-filled-opacity">
+        <div className="btn btn-1 hover-filled-opacity btn-nav">
             <a href={props.link}><span>{props.value}</span></a>
         </div>
     );
