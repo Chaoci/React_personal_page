@@ -4,6 +4,7 @@ import styled from "@emotion/styled";
 import Banner from "./Components/Banner";
 import About from "./Components/About";
 import Project from "./Components/projectView/Project";
+import ContactForm from "./Components/contactView/Contact";
 import "./base.css";
 
 const Container = styled.div`
@@ -22,6 +23,7 @@ function App() {
       <Banner></Banner>
       <About></About>
       <Project></Project>
+      <ContactForm></ContactForm>
     </Container>
   );
 }
