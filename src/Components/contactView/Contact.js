@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import './Contact.css'
+
 
 function ContactForm() {
   var recipient = 'new.chaoci@gmail.com';
@@ -17,20 +19,24 @@ function ContactForm() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Subject:
-          <input type="text" value={subject} onChange={(e) => setSubject(e.target.value)} />
-        </label>
-        <label>
-          Message:
-          <textarea value={message} onChange={(e) => setMessage(e.target.value)} />
-        </label>
-      </form>
+    <div className='Contact-wrapper'>
+      <div className="Contact-card">
+        <h2>Contact Me</h2>
+        <p>Reach Me Here</p>
+        <form onSubmit={handleSubmit} className='Contact-form'>
+          <label>
+            Subject:
+            <input id="subject" type="text" value={subject} onChange={(e) => setSubject(e.target.value)} />
+          </label>
+          <label>
+            Message:
+            <textarea id="textarea" value={message} onChange={(e) => setMessage(e.target.value)} />
+          </label>
+        </form>
 
-      <div onClick={handleButtonClick} role="button" tabIndex={0} className="btn btn-2 hover-filled-opacity">
-        <a href="#3"><span>Send Email</span></a> 
+        <div onClick={handleButtonClick} role="button" tabIndex={0} className="btn btn-2 hover-filled-opacity">
+          <a href="#3"><span>Send Email</span></a> 
+        </div>
       </div>
     </div>
   );

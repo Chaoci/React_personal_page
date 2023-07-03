@@ -1,0 +1,35 @@
+.Contact-wrapper{
+    background-image: url('../../images/contact_background.svg');
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.Contact-card{
+    padding: 25px 0;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:#9c9191;
+    border-radius: 15px;
+}
+
+.Contact-form{
+    display: flex;
+    flex-direction: column;
+    label{
+        text-align: center ;
+    }
+    #subject{
+        width: 100%;
+        height: 36px;
+        border-radius: 15px;
+        outline: 0;
+        border : 1px solid #fff;
+    }
+    #textarea{
+        border-radius: 15px;
+        height: 100%;
+    }
+}
