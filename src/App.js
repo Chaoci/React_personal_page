@@ -1,8 +1,8 @@
 import React from "react";
 import Nav from "./Components/Nav";
 import styled from "@emotion/styled";
-import Banner from "./Components/Banner";
-import About from "./Components/About";
+import Banner from "./Components/BannerView/Banner";
+import About from "./Components/AboutView/About";
 import Project from "./Components/projectView/Project";
 import ContactForm from "./Components/contactView/Contact";
 import "./base.css";
@@ -16,10 +16,9 @@ const Container = styled.div`
 
 
 function App() {
-  console.log(process.env.PUBLIC_URL); 
   return (
     <Container>
-      <Nav></Nav>
+      <Nav ></Nav>
       <Banner></Banner>
       <About></About>
       <Project></Project>

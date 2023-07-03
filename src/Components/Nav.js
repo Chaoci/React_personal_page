@@ -3,7 +3,8 @@ import styled from '@emotion/styled';
 import Button from './UI/button';
 import { ReactComponent as myLogo } from '../images/mylogo_transparent_white.svg';
 import { ReactComponent as menu } from '../images/menu.svg'; 
-import { ReactComponent as close } from '../images/close.svg';  
+import { ReactComponent as close } from '../images/close.svg'; 
+
 
 const Navgation=styled.div`
     position:sticky;
@@ -78,27 +79,29 @@ const Logo = styled.div`
 `;
 
 const Nav=()=>{
+
     const [showMenu, setShowMenu] = useState(false);
     const handleMenuClick = () => {
         setShowMenu(!showMenu); 
     };
+
     return(
         <Navgation>
             <Logo>
-                <a href="#5"><MyLogo /></a>
+                <a href="#banner"><MyLogo /></a>
             </Logo>
             <Links>
-                <Button value="About Me" link="#1"/>
-                <Button value="Projects" link="#2"/>
-                <Button value="Contact" link="#3"/>
+                <Button value="About Me" link="#about"/>
+                <Button value="Projects" link="#project"/>
+                <Button value="Contact"  link="#contact"/>
                 {!showMenu ? <Menu onClick={handleMenuClick}/>:
                 <Close onClick={handleMenuClick}/>}
             </Links>
         {!showMenu ||
             <MenuMenu>
-                <a href="#1">About Me</a>
-                <a href="#2">Projects</a>
-                <a href="#3">Contact</a>
+                <a href="#about" onClick={handleMenuClick}>About Me</a>
+                <a href="#project" onClick={handleMenuClick}>Projects</a>
+                <a href="#contact" onClick={handleMenuClick}>Contact</a>
             </MenuMenu>
         }
         </Navgation>

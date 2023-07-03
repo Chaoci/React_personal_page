@@ -19,17 +19,17 @@ function ContactForm() {
   };
 
   return (
-    <div className='Contact-wrapper'>
+    <div className='Contact-wrapper' id="contact">
       <div className="Contact-card">
         <h2>Contact Me</h2>
         <p>Reach Me Here</p>
         <form onSubmit={handleSubmit} className='Contact-form'>
           <label>
-            Subject:
+            Subject<br/>
             <input id="subject" type="text" value={subject} onChange={(e) => setSubject(e.target.value)} />
           </label>
           <label>
-            Message:
+            Message<br/>
             <textarea id="textarea" value={message} onChange={(e) => setMessage(e.target.value)} />
           </label>
         </form>

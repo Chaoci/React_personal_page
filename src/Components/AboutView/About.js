@@ -1,12 +1,12 @@
 import React from 'react';
-import orange from '../images/orange.png';
+import orange from '../../images/orange.png';
 import './About.css';
-import Presentage from './UI/presentage';
-import '../Components/UI/wave.css';
+import Presentage from '../UI/presentage';
+import '../UI/wave.css';
 
 const About = () => {
     return (
-            <div className="About-wrapper">
+            <div className="About-wrapper" id="about">
                 <div className="box1">
                     <img src={orange} alt="" />
                 </div>
